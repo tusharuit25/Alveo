@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="110dp">
+
+    <ImageView
+        android:id="@+id/device_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/alveodot"
+        android:background="@drawable/circle"
+        android:scaleType="centerInside"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+       />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/desciption"
+        android:layout_marginLeft="20dp"
+        android:layout_toEndOf="@+id/device_image">
+
+    <com.twigsoftwares.alveo.TextViewWithBoldFont
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/device_name"
+        android:text="Rescue Sensor" />
+
+    <com.twigsoftwares.alveo.TextViewWithRegularFont
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/last_sync"
+        android:layout_below="@id/device_name"
+        android:text="Last synced" />
+
+    <com.twigsoftwares.alveo.TextViewWithRegularFont
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/last_sync_time"
+        android:layout_marginLeft="20dp"
+        android:layout_toEndOf="@id/last_sync"
+        android:layout_below="@id/device_name"
+        android:text="05 Dec 2019 | 3:00pm" />
+
+
+
+    <com.twigsoftwares.alveo.TextViewWithRegularFont
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/paired_width"
+        android:layout_below="@id/last_sync"
+        android:text="Paired with" />
+
+    <com.twigsoftwares.alveo.TextViewWithRegularFont
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/last_paired_time"
+        android:layout_marginLeft="20dp"
+        android:layout_toEndOf="@id/paired_width"
+        android:layout_below="@id/last_sync_time"
+        android:text="No medication" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_below="@id/desciption"
+        android:layout_height="1.5dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart ="116dp"
+        android:background="@color/colorBorder"/>
+</RelativeLayout>
