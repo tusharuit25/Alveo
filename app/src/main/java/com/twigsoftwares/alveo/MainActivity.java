@@ -39,7 +39,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void preparestaticdata() {
 
-       /* Device device = new Device("Rescue sensor", "2 min ago",  "Ventolin 200 | 1 Puff | Twice Daily",  0);
+       /*
+
+        Device device = new Device("Rescue sensor", "2 min ago",  "Ventolin 200 | 1 Puff | Twice Daily",  0);
         deviceList.add(device);
 
         Device device1 = new Device("Controller sensor 01", "6 min ago",  "Ventolin 200 | 1 Puff | Twice Daily",  0);
@@ -49,30 +51,23 @@ public class MainActivity extends AppCompatActivity {
         deviceList.add(device2);
 
         Device device3 = new Device("alveoAiralveoAir", "5 dec 2019 03:00 pm",  "No Medication",  1);
-        deviceList.add(device3);*/
+        deviceList.add(device3);
 
-        API.deviceService()
-                .getDeviceList()
-                .enqueue(new Callback<Devices>() {
-                    @Override
-                    public void onResponse(@NonNull Call<Devices> call, @NonNull Response<Devices> response) {
+        */
 
-                        deviceList = response.body().getDevices();
-                        recyclerView.setAdapter(new DeviceAdapter(deviceList));
-                    }
+        API.deviceService().GetDeviceList().enqueue(new Callback<Devices>() {
+            @Override
+            public void onResponse(Call<Devices> call, Response<Devices> response) {
 
-                    @Override
-                    public void onFailure(@NonNull Call<Devices> call, @NonNull Throwable t) {
-                        System.out.println(t.getMessage());
-                    }
-                });
+                deviceList.addAll(response.body().getDevices());
+                deviceAdapter.notifyDataSetChanged();
+            }
 
-
-
-        deviceAdapter.notifyDataSetChanged();
-
-
-
+            @Override
+            public void onFailure(Call<Devices> call, Throwable t) {
+                System.out.println(t.getMessage());
+            }
+        });
 
     }
 }
