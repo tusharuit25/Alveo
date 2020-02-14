@@ -46,16 +46,16 @@ import com.google.gson.annotations.SerializedName;
 
 public class Device {
 
-    @SerializedName("name")
+    @SerializedName("Name")
     @Expose
     private String name;
-    @SerializedName("lastsycned")
+    @SerializedName("LastSycned")
     @Expose
     private String lastsycned;
-    @SerializedName("pairedwith")
+    @SerializedName("PairedWith")
     @Expose
     private String pairedwith;
-    @SerializedName("type")
+    @SerializedName("Type")
     @Expose
     private Integer type;
 

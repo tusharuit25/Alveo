@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeviceDetailActivity">
+
+    <include layout="@layout/toolbar" android:id="@+id/toolbar"/>
+
+    <RelativeLayout
+        android:background="@drawable/roundedrectangle"
+        android:layout_marginTop="75dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/sensorimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/alveodot">
+        </ImageView>
+        <com.twigsoftwares.alveo.TextViewWithBoldFont
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/device_name_part1"
+            android:layout_below="@id/sensorimage"
+           android:layout_marginLeft="156dp"
+            android:text="Alveo" />
+        <com.twigsoftwares.alveo.TextViewWithBoldFont
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            android:layout_toEndOf="@+id/device_name_part1"
+            android:textColor="@android:color/holo_red_dark"
+            android:id="@+id/device_name_part2"
+            android:layout_below="@id/sensorimage"
+            android:layout_centerHorizontal="true"
+            android:text="Dot" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:id="@+id/row01"
+            android:layout_below="@id/header"
+            android:layout_width="match_parent"
+            android:background="@drawable/borderrectangle"
+            android:layout_height="60dp">
+            <com.twigsoftwares.alveo.TextViewWithBoldFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:paddingStart="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/colorlable"
+                android:layout_centerVertical="true"
+                android:textStyle="normal"
+                android:text="Device Name" />
+
+            <com.twigsoftwares.alveo.TextViewWithBoldFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textSize="20sp"
+                android:paddingEnd="10dp"
+                android:textColor="@color/colorlable"
+                android:layout_centerVertical="true"
+                android:textStyle="normal"
+                android:text="Rescue Sensor" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/row02"
+            android:layout_below="@id/row01"
+            android:layout_width="match_parent"
+            android:background="@drawable/borderrectangle"
+            android:layout_height="60dp">
+            <com.twigsoftwares.alveo.TextViewWithBoldFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:paddingStart="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/colorlable"
+                android:layout_centerVertical="true"
+                android:textStyle="normal"
+                android:text="Medication" />
+
+            <com.twigsoftwares.alveo.TextViewWithBoldFont
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textSize="20sp"
+                android:paddingEnd="10dp"
+                android:textColor="@color/colorlable"
+                android:layout_centerVertical="true"
+                android:textStyle="normal"
+                android:text="Ventolin 100mcg,2Puffs,Twice a day" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/row03"
+            android:layout_below="@id/row02"
+            android:layout_width="match_parent"
+            android:background="@drawable/borderrectangle"
+            android:layout_height="60dp">
+            <com.twigsoftwares.alveo.TextViewWithBoldFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:paddingStart="10dp"
+                android:textSize="13sp"
+                android:textColor="@color/colorlable"
+                android:layout_centerVertical="true"
+                android:textStyle="normal"
+                android:text="META DATA (READ ONLY)" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/row04"
+            android:layout_below="@id/row03"
+            android:layout_width="match_parent"
+            android:background="@drawable/borderrectangle"
+            android:layout_height="60dp">
+            <com.twigsoftwares.alveo.TextViewWithBoldFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:paddingStart="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/colorlable"
+                android:layout_centerVertical="true"
+                android:textStyle="normal"
+                android:text="Last Synced" />
+
+            <com.twigsoftwares.alveo.TextViewWithBoldFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textSize="20sp"
+                android:paddingEnd="10dp"
+                android:textColor="@color/colorlable"
+                android:layout_centerVertical="true"
+                android:textStyle="normal"
+                android:text="3 weeks ago" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/row05"
+            android:layout_below="@id/row04"
+            android:layout_width="match_parent"
+            android:background="@drawable/borderrectangle"
+            android:layout_height="60dp">
+            <com.twigsoftwares.alveo.TextViewWithBoldFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:paddingStart="10dp"
+                android:textSize="10sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/colorlable"
+                android:textStyle="normal"
+                android:text="effective immediately, our contact details have changed. Please update your address book accordingly. You may reach us via email at techsupport@registry.in or via Local Toll Free Phone" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/row06"
+            android:layout_below="@id/row05"
+            android:layout_width="match_parent"
+            android:background="@drawable/borderrectangle"
+            android:layout_height="60dp">
+            <com.twigsoftwares.alveo.TextViewWithBoldFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:paddingStart="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/colorlable"
+                android:layout_centerVertical="true"
+                android:textStyle="normal"
+                android:text="Battery" />
+
+            <com.twigsoftwares.alveo.TextViewWithBoldFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textSize="20sp"
+                android:paddingEnd="10dp"
+                android:textColor="@color/colorlable"
+                android:layout_centerVertical="true"
+                android:textStyle="normal"
+                android:text="92%" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/row07"
+            android:layout_below="@id/row06"
+            android:layout_width="match_parent"
+            android:background="@drawable/borderrectangle"
+            android:layout_height="60dp">
+            <com.twigsoftwares.alveo.TextViewWithBoldFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:paddingStart="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/colorlable"
+                android:layout_centerVertical="true"
+                android:textStyle="normal"
+                android:text="Device ID" />
+
+            <com.twigsoftwares.alveo.TextViewWithBoldFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textSize="20sp"
+                android:paddingEnd="10dp"
+                android:textColor="@color/colorlable"
+                android:layout_centerVertical="true"
+                android:textStyle="normal"
+                android:text="ALVDOT9476670IN" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/row08"
+            android:layout_below="@id/row07"
+            android:layout_width="match_parent"
+            android:background="@drawable/borderrectangle"
+            android:layout_height="60dp">
+            <com.twigsoftwares.alveo.TextViewWithBoldFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:paddingStart="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/colorusermanual"
+                android:layout_centerVertical="true"
+                android:textStyle="normal"
+                android:text="User Manual" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
