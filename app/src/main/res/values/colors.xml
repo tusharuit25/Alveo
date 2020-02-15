@@ -4,6 +4,17 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="colorBorder">#f2f1f8</color>
+
+
     <color name="colorlable">#C7C7C7</color>
     <color name="colorusermanual">#2846EC</color>
+    <color name="colorActionbar">#FF5722</color>
+    <color name="colorActionbarHeader">#F44336</color>
+
+    <!--Theme Colors-->
+    <color name="orange">#ff8200</color>
+    <color name="orangedark">#f77000</color>
+    <color name="daynight_textcolor">#ff8222</color>
+    <color name="switchcolor">#BC2F1D</color>
+
 </resources>
