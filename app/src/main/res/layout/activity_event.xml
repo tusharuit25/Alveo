@@ -36,6 +36,25 @@
         tools:layout_editor_absoluteX="155dp"
         tools:layout_editor_absoluteY="340dp" />
 
+
+    <Button
+        android:id="@+id/navigatebutton"
+        android:layout_below="@id/editbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to another screen"
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="340dp" />
+
+    <Button
+        android:id="@+id/webebutton"
+        android:layout_below="@id/navigatebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open website"
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="340dp" />
+
 </RelativeLayout>
 
     <!---->

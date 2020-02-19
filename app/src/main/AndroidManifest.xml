@@ -13,6 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".NavigatedActivity"></activity>
         <activity android:name=".EventActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,10 +23,8 @@
         </activity>
         <activity
             android:name=".UiControlsActivity"
-            android:theme="@style/SecondTheme">
-
-        </activity>
-        <activity android:name=".DeviceDetailActivity"></activity>
+            android:theme="@style/SecondTheme"></activity>
+        <activity android:name=".DeviceDetailActivity" />
         <activity android:name=".DeviceActivity" />
         <activity android:name=".MainActivity" />
     </application>
