@@ -17,4 +17,9 @@
     <color name="daynight_textcolor">#ff8222</color>
     <color name="switchcolor">#BC2F1D</color>
 
+    <color name="red">#FF0000</color>
+    <color name="green">#01FF21</color>
+    <color name="blue">#0087FF</color>
+    <color name="black">#000000</color>
+
 </resources>
